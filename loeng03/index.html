@@ -5,29 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Regamine</h1>
-  <form>
+  <div class="konteiner">
+    <h1>Regamine</h1>
+    <form>
+      <label for="nimi">Nimi</label><br>
+      <input type="text" id="nimi" required><br><br>
 
-    <label for="kasutajanimi">Kasutajanimi</label><br>
-    <input type="text" id="kasutajanimi" required><br><br>
+      <label for="kasutajanimi">Kasutajanimi</label><br>
+      <input type="text" id="kasutajanimi" required><br><br>
 
-    <label for="parool">Parool</label><br>
-    <input type="password" id="parool" required><br><br>
+      <label for="parool">Parool</label><br>
+      <input type="password" id="parool" minlength="6" required><br><br>
 
-    <input type="submit" value="Registreeri">
-    <!--
-      NIMI
-      KASUTAJANIMI
-      PAROOL (MINIMAALSELT 6 TÄHEMÄRKI)
-      EMAIL
-      SÜNNIKUUPÄEV (MINGI KALENDER, MITTE PEALE 2020)
-      SUGU (DROPDOWN, NAINE/MEES)
-      KAS OLED TINGIMUSTEGA NÕUS? (CHECKBOX, peab olema linnuke)
-      REGISTREERI (NUPP)
-    -->
-  </form>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" required><br><br>
+
+      <label for="telefon">Telefoni number</label><br>
+      <input type="text" value="+372" style="width: 3rem;" disabled>
+      <input type="tel" id="telefon" pattern="5[0-9]{6}" required><br><br>
+
+      <label for="kuupaev">Sünnikuupäev</label><br>
+      <input type="date" id="kuupaev" max="2020-12-31" required><br><br>
+
+      <label for="sugu">Sugu</label><br>
+      <select name="sugu" id="sugu">
+        <option value="naine">Naine</option>
+        <option value="mees">Mees</option>
+      </select><br><br>
+
+      <input type="checkbox" id="nousolek" required>
+      <label for="nousolek">Kas nõustud <a href="" target="_blank">tingimustega</a>?</label><br><br>
+
+      <input type="submit" value="Registreeri">
+    </form>
+  </div>
 </body>
 </html>

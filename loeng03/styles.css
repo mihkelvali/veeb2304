@@ -1,0 +1,19 @@
+body, select, input[type="date"] {
+  font-family: 'Poppins', sans-serif;
+}
+
+.konteiner {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.39959733893557425) 100%);
+  border: 5px solid palevioletred;
+  border-radius: 20px;
+  max-width: 800px;
+  min-width: 300px;
+  width: 40%;
+  margin: 20px auto 80px;
+  padding: 40px;
+}
+
+.konteiner > form, input, select {
+  font-size: 0.6rem;
+}
