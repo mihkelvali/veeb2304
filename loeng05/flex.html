@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .asdf {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .konteiner {
+      display: grid;
+      gap: 30px;
+      padding: 10px;
+      background-color: plum;
+      grid-template-columns: 100px 1fr 100px;
+    }
+
+    .konteiner2 {
+      grid-template-columns: 50px 50px 50px 1fr;
+    }
+
+    .kast {
+      height: 100px;
+      background-color: orangered;
+      font-size: 52px;
+    }
+  </style>
+</head>
+<body>
+  <div class="asdf">
+    <div class="konteiner">
+      <div class="kast kast1">L</div>
+      <div class="kast kast2">2</div>
+    </div>
+    <div class="konteiner konteiner2">
+      <div class="kast kast1">L</div>
+      <div class="kast kast2">2</div>
+    </div>
+  </div>
+</body>
+</html>

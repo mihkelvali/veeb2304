@@ -3,10 +3,14 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 82px 1fr 82px;
   background-color: lightgoldenrodyellow;
   padding: 8px;
+}
+
+header>h1 {
+  text-align: center;
 }
 
 header>a>img,
