@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pais {
+  height: 778px;
+  padding: 32px 76px 142px;
+  background-image: url("pildid/Hills.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pais > nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pais > nav > .vasak {
+  display: flex;
+}
+
+.pais > nav > .vasak > img {
+  height: 82px;
+}
+
+.pais > nav > .vasak > div {
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pais > nav > .parem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.pais > nav > .parem > a {
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 2.67px;
+}
+
+
