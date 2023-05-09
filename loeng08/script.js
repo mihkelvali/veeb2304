@@ -5,6 +5,15 @@ setTimeout(function() {
   document.querySelector('#mingiDiv').style.fontWeight = 900;
 }, 1000);
 
+document.querySelector('#kirjutaLogisse').addEventListener('click', kirjutaLogisse);
+
+window.addEventListener('resize', function () {
+  document.querySelector('#aknaSuurus').innerHTML = `
+    Akna laius: ${window.innerWidth}
+    Akna kõrgus: ${window.innerHeight}
+  `
+});
+
 function generateRandom(min, max) {
   let difference = max - min;
   let rand = Math.random();
